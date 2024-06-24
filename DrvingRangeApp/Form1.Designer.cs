@@ -94,9 +94,10 @@
             // 
             // btnViewTrends
             // 
+            btnViewTrends.AutoSize = true;
             btnViewTrends.Location = new Point(12, 272);
             btnViewTrends.Name = "btnViewTrends";
-            btnViewTrends.Size = new Size(75, 23);
+            btnViewTrends.Size = new Size(79, 25);
             btnViewTrends.TabIndex = 4;
             btnViewTrends.Text = "View Trends";
             btnViewTrends.UseVisualStyleBackColor = true;
