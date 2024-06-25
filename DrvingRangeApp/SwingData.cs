@@ -34,7 +34,8 @@ namespace DrvingRangeApp
         Shank,
         Top,
         Thin,
-        Fat
+        Fat,
+        Normal
     }
     public class SwingData
     {

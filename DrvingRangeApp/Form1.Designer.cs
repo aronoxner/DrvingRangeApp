@@ -42,15 +42,15 @@
             checkDriver = new CheckBox();
             groupClubFilters = new GroupBox();
             groupFlightFilters = new GroupBox();
-            checkpullHook = new CheckBox();
-            checkHook = new CheckBox();
-            checkPull = new CheckBox();
-            checkFade = new CheckBox();
-            checkStraight = new CheckBox();
-            checkPushSlice = new CheckBox();
-            checkSlice = new CheckBox();
-            checkPush = new CheckBox();
             checkDraw = new CheckBox();
+            checkPush = new CheckBox();
+            checkSlice = new CheckBox();
+            checkPushSlice = new CheckBox();
+            checkStraight = new CheckBox();
+            checkFade = new CheckBox();
+            checkPull = new CheckBox();
+            checkHook = new CheckBox();
+            checkpullHook = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)gridRangeData).BeginInit();
             groupClubFilters.SuspendLayout();
             groupFlightFilters.SuspendLayout();
@@ -59,9 +59,11 @@
             // gridRangeData
             // 
             gridRangeData.AllowUserToOrderColumns = true;
+            gridRangeData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridRangeData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gridRangeData.Location = new Point(12, 49);
             gridRangeData.Name = "gridRangeData";
+            gridRangeData.RowHeadersVisible = false;
             gridRangeData.Size = new Size(776, 150);
             gridRangeData.TabIndex = 0;
             // 
@@ -206,75 +208,15 @@
             groupFlightFilters.TabStop = false;
             groupFlightFilters.Text = "Ball Flight Filters";
             // 
-            // checkpullHook
+            // checkDraw
             // 
-            checkpullHook.AutoSize = true;
-            checkpullHook.Location = new Point(6, 22);
-            checkpullHook.Name = "checkpullHook";
-            checkpullHook.Size = new Size(78, 19);
-            checkpullHook.TabIndex = 12;
-            checkpullHook.Text = "Pull Hook";
-            checkpullHook.UseVisualStyleBackColor = true;
-            // 
-            // checkHook
-            // 
-            checkHook.AutoSize = true;
-            checkHook.Location = new Point(6, 47);
-            checkHook.Name = "checkHook";
-            checkHook.Size = new Size(55, 19);
-            checkHook.TabIndex = 13;
-            checkHook.Text = "Hook";
-            checkHook.UseVisualStyleBackColor = true;
-            // 
-            // checkPull
-            // 
-            checkPull.AutoSize = true;
-            checkPull.Location = new Point(6, 72);
-            checkPull.Name = "checkPull";
-            checkPull.Size = new Size(46, 19);
-            checkPull.TabIndex = 14;
-            checkPull.Text = "Pull";
-            checkPull.UseVisualStyleBackColor = true;
-            // 
-            // checkFade
-            // 
-            checkFade.AutoSize = true;
-            checkFade.Location = new Point(6, 97);
-            checkFade.Name = "checkFade";
-            checkFade.Size = new Size(51, 19);
-            checkFade.TabIndex = 15;
-            checkFade.Text = "Fade";
-            checkFade.UseVisualStyleBackColor = true;
-            // 
-            // checkStraight
-            // 
-            checkStraight.AutoSize = true;
-            checkStraight.Location = new Point(90, 22);
-            checkStraight.Name = "checkStraight";
-            checkStraight.Size = new Size(67, 19);
-            checkStraight.TabIndex = 16;
-            checkStraight.Text = "Straight";
-            checkStraight.UseVisualStyleBackColor = true;
-            // 
-            // checkPushSlice
-            // 
-            checkPushSlice.AutoSize = true;
-            checkPushSlice.Location = new Point(163, 22);
-            checkPushSlice.Name = "checkPushSlice";
-            checkPushSlice.Size = new Size(79, 19);
-            checkPushSlice.TabIndex = 17;
-            checkPushSlice.Text = "Push Slice";
-            checkPushSlice.UseVisualStyleBackColor = true;
-            // 
-            // checkSlice
-            // 
-            checkSlice.AutoSize = true;
-            checkSlice.Location = new Point(163, 47);
-            checkSlice.Name = "checkSlice";
-            checkSlice.Size = new Size(50, 19);
-            checkSlice.TabIndex = 18;
-            checkSlice.Text = "Slice";
-            checkSlice.UseVisualStyleBackColor = true;
+            checkDraw.AutoSize = true;
+            checkDraw.Location = new Point(163, 97);
+            checkDraw.Name = "checkDraw";
+            checkDraw.Size = new Size(53, 19);
+            checkDraw.TabIndex = 20;
+            checkDraw.Text = "Draw";
+            checkDraw.UseVisualStyleBackColor = true;
             // 
             // checkPush
             // 
@@ -286,15 +228,75 @@
             checkPush.Text = "Push";
             checkPush.UseVisualStyleBackColor = true;
             // 
-            // checkDraw
+            // checkSlice
             // 
-            checkDraw.AutoSize = true;
-            checkDraw.Location = new Point(163, 97);
-            checkDraw.Name = "checkDraw";
-            checkDraw.Size = new Size(53, 19);
-            checkDraw.TabIndex = 20;
-            checkDraw.Text = "Draw";
-            checkDraw.UseVisualStyleBackColor = true;
+            checkSlice.AutoSize = true;
+            checkSlice.Location = new Point(163, 47);
+            checkSlice.Name = "checkSlice";
+            checkSlice.Size = new Size(50, 19);
+            checkSlice.TabIndex = 18;
+            checkSlice.Text = "Slice";
+            checkSlice.UseVisualStyleBackColor = true;
+            // 
+            // checkPushSlice
+            // 
+            checkPushSlice.AutoSize = true;
+            checkPushSlice.Location = new Point(163, 22);
+            checkPushSlice.Name = "checkPushSlice";
+            checkPushSlice.Size = new Size(79, 19);
+            checkPushSlice.TabIndex = 17;
+            checkPushSlice.Text = "Push Slice";
+            checkPushSlice.UseVisualStyleBackColor = true;
+            // 
+            // checkStraight
+            // 
+            checkStraight.AutoSize = true;
+            checkStraight.Location = new Point(90, 22);
+            checkStraight.Name = "checkStraight";
+            checkStraight.Size = new Size(67, 19);
+            checkStraight.TabIndex = 16;
+            checkStraight.Text = "Straight";
+            checkStraight.UseVisualStyleBackColor = true;
+            // 
+            // checkFade
+            // 
+            checkFade.AutoSize = true;
+            checkFade.Location = new Point(6, 97);
+            checkFade.Name = "checkFade";
+            checkFade.Size = new Size(51, 19);
+            checkFade.TabIndex = 15;
+            checkFade.Text = "Fade";
+            checkFade.UseVisualStyleBackColor = true;
+            // 
+            // checkPull
+            // 
+            checkPull.AutoSize = true;
+            checkPull.Location = new Point(6, 72);
+            checkPull.Name = "checkPull";
+            checkPull.Size = new Size(46, 19);
+            checkPull.TabIndex = 14;
+            checkPull.Text = "Pull";
+            checkPull.UseVisualStyleBackColor = true;
+            // 
+            // checkHook
+            // 
+            checkHook.AutoSize = true;
+            checkHook.Location = new Point(6, 47);
+            checkHook.Name = "checkHook";
+            checkHook.Size = new Size(55, 19);
+            checkHook.TabIndex = 13;
+            checkHook.Text = "Hook";
+            checkHook.UseVisualStyleBackColor = true;
+            // 
+            // checkpullHook
+            // 
+            checkpullHook.AutoSize = true;
+            checkpullHook.Location = new Point(6, 22);
+            checkpullHook.Name = "checkpullHook";
+            checkpullHook.Size = new Size(78, 19);
+            checkpullHook.TabIndex = 12;
+            checkpullHook.Text = "Pull Hook";
+            checkpullHook.UseVisualStyleBackColor = true;
             // 
             // MainPage
             // 
@@ -310,7 +312,7 @@
             Controls.Add(gridRangeData);
             Name = "MainPage";
             Text = "Driving Range Data";
-            WindowState = FormWindowState.Maximized;
+            Load += MainPage_Load;
             ((System.ComponentModel.ISupportInitialize)gridRangeData).EndInit();
             groupClubFilters.ResumeLayout(false);
             groupClubFilters.PerformLayout();

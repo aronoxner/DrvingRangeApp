@@ -8,6 +8,6 @@ namespace DrvingRangeApp
 {
     internal class Data
     {
-        public static Queue<SwingData> swingData = new Queue<SwingData>();
+        public static List<SwingData> swingData = new List<SwingData>();
     }
 }
